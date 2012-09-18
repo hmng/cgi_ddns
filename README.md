@@ -23,6 +23,5 @@ behind a NAT router with dynamic IP:
 
 crontab  -e
  
-    0,15,30,45 * * * * curl --digest --user <hostname>:<password> -s
-http://<YOURWEBSERVER>/nsupdate/nsupdate.cgi > /dev/null
+    0,15,30,45 * * * * curl --digest --user <hostname>:<password> -s http://<YOURWEBSERVER>/nsupdate/nsupdate.cgi > /dev/null
 
